@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>    
+    body{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+    }    
+
+    #calculadora{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        background-color: gray;
+        color: black;
+        padding: 3em;
+        border-radius: 2em;
+        box-shadow: rgba(0, 0, 0, 0.349) 10px 10px 10px;
+    }
+
+    #resultado{
+        width: 100%;
+        padding-left: 2em;
+        height: 5em;
+        margin-bottom: 2em;
+        border-radius: 5px;
+        font-size: 1em;
+    }
+
+    li{
+        list-style: none;
+        display: flex; 
+        flex-direction: row;
+    } 
+    ul{
+        margin: 0;
+        padding: 0;
+    }
+    .teclas{
+        height: 5em;
+        width: 5em;
+        padding: 5px;
+        margin: 3px;
+        background-color: black;
+        color: orange;  
+        border: none;      
+    }
+
+    .teclasC{
+        height: 3em;
+        width: 10em;
+        padding: 5px;
+        margin: 5px;
+        border: none;        
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    .teclasC:hover{
+        background-color: gray;
+        color: white;
+        border: 2px solid;
+        border-radius: 10px;
+
+    }
+
+    .teclas:hover{
+        opacity: 0.6;
+    }
+
+    #enter{
+        background-color: orange;
+        transition: all 1s;
+    }
+
+    #enter:hover{
+        background-color: orangered;
+    }
+
+</style>
+</head>
+
+<body>
+    <div id="calculadora">
+        <input type="text" placeholder="Resultado:" name="nome" id="resultado" disabled>
+        <ul>
+            <li>
+                <button class="teclasC">CE</button>
+                <button class="teclasC">C</button>                
+            </li>
+            <li>
+                <button class="teclas">1</button>
+                <button class="teclas">2</button>
+                <button class="teclas">3</button>
+                <button class="teclas">+</button>
+            </li>
+            <li>
+                <button class="teclas">4</button>
+                <button class="teclas">5</button>
+                <button class="teclas">6</button>
+                <button class="teclas">-</button>   
+            </li>
+            <li>
+                <button class="teclas">7</button>
+                <button class="teclas">8</button>
+                <button class="teclas">9</button> 
+                <button class="teclas">X</button>      
+            </li>
+            <li>
+                <button class="teclas" id="tecla2">0</button>
+                <button class="teclas">,</button> 
+                <button class="teclas">/</button> 
+                <button class="teclas" id="enter"></button>          
+            </li>
+        </ul>        
+    </div>
+    <?php 
+        $nome = _POST
+
+    ?>
+
+</body>
+
+</html>
