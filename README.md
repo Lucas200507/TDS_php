@@ -1,5 +1,5 @@
 ## Algumas funções em php:
-- explode('string delimiter', $string) -> formata a string como array. O primeiro elemento será até o delimiter.
+- <fkont color='red'>explode('string delimiter', $string)</font> -> formata a string como array. O primeiro elemento será até o delimiter.
   . EX: $string = 'Joao Robson'; / $stringFormat =  explode(' ', $string); / $stringFormat[0] = 'Joao'
 
 - number_format($float, qnt_casasDecimais) -> formata o número flutuante em relação a quantidade de casas decimais inseridas
