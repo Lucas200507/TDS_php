@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+        label{
+            margin-top: 0.2em;            
+        }
+        input{
+            margin-bottom: 1em;
+            padding: 0.2em;
+        }    
+    </style>
+<body>
+    <!-- POST É O MAIS SEGURO // GET é para formulários básicos-->
+    <h1 style="text-align: center;">Calculadora de Multiplicação</h1>
+    <form action="./php/index.php" method="get">
+        <label for="">Digite um número</label>
+        <input type="number" name="n1" required>
+        <label for="">Digite outro número</label>
+        <input type="number" name="n2" required>
+        <label for="">Digite outro número</label>
+        <input type="number" name="n3" required>
+        <label for="">Digite outro número</label>
+        <input type="number" name="n4" required>
+        <label for="">Digite outro número</label>
+        <input type="number" name="n5" required>
+        <!-- irá submeter os dados para o action do form -->
+        <input type="submit" value="Calcular" id="btCalcular" onclick="limpar()">
+        <p id="resultado"></p>
+    </form>    
+</body>
+</html>

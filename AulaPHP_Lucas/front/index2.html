@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+        }
+        label{
+            margin-top: 0.2em;            
+        }
+        input{
+            margin-bottom: 1em;
+            padding: 0.2em;
+        }    
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Calculando com dobro ou triplo</h1>
+    <form action="./php/index2.php" method="get">
+        <label for="">Digite um número</label>
+        <input type="number" name="n1">
+        <label for="">Digite outro número</label>        
+        <label for="">
+            <input type="radio" name="opcao" value="Dobro">
+            Dobro
+        </label>   
+        <label for="">
+            <input type="radio" name="opcao" value="Triplo">
+            Triplo
+        </label>
+        <input type="submit" value="calcular">
+      
+    </form>
+</body>
+</html>
