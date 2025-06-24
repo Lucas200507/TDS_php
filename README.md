@@ -8,4 +8,7 @@
 - rand(min, max) -> gera um número aleatório entre o número mínimo e máximo.
   . EX: rand(1, 5) -> gera um número igual e entre 1 e 5;
 
-
+## PARA ACESSAR O API_PHP
+- baixe o arquivo e cole-o em C:/xampp/htdocs
+- altere os dados em server.php
+- crie os bancos necessários em seu mysql
